@@ -37,14 +37,14 @@ function iniciarJogo() {
 function carregarResultado() {
     const telaDeLoad = document.querySelector(".telaDeLoad");
     telaDeLoad.innerHTML = `<h1>Aguarde...</h1>
-    <img class="objetoPedra" src="img/Stone.png"/>`
+    <img class="objetosLoad" src="img/load-1.png"/>`
     setTimeout(() => {
         telaDeLoad.innerHTML = `<h1>Aguarde...</h1>
-    <img class="objetos" src="img/Paper.png"/>`}, 1000);
+    <img class="objetosLoad" src="img/load-2.png"/>`}, 500);
     setTimeout(() => {
         telaDeLoad.innerHTML = `<h1>Aguarde...</h1>
-    <img class="objetos" src="img/Shears.png"/>`}, 2000);
-    setTimeout(() => { telaDeLoad.innerHTML = ``; exibirResultado() }, 3000);
+    <img class="objetosLoad" src="img/load-3.png"/>`}, 1000);
+    setTimeout(() => { telaDeLoad.innerHTML = ``; exibirResultado() }, 1500);
 }
 
 function selecionarObjeto(objeto) {

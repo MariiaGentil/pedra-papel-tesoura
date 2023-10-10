@@ -1,25 +1,44 @@
+@font-face {
+    font-family: 'Stardew-Valley-font';
+    src: url(font/StardewValley_Text_Font/StardewValley.otf);
+}
+
 * {
     box-sizing: border-box;
+    color: #413014;
+    font-family: 'Stardew-Valley-font';
+
 }
+
+
 
 body{
     background-image: url(img/background.jpg);
     background-repeat: no-repeat no-repeat;
     background-size: cover;
-    font-family: 'Chakra Petch', sans-serif;
-    color: #8a17d786;
+    position: relative;
 }
 .telaInicial{
     position: fixed;
-    top: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.telaInicial img {
+    position: absolute;
+    height: 180px;
+    top: -140px;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
 h1{
+    text-align: center;
     font-size: 70px;
     margin: 60px;
     text-align: center;
+    color: #000;
 }
 
 .telaInicial div {
@@ -28,16 +47,17 @@ h1{
 }
 .telaInicial div input{
     margin-right: 15px;
-    height: 40px;
-    width: 240px;
-    border: 1px solid #6312d488;
-    color: #6312d4c5;
+    height: 60px;
+    width: 300px;
+    border: 5px solid #413014;
+    color:  #413014;
     font-size: 16px;
-    background-color: #6312d443;
+    background-color: #e0a000e0;
     border-radius: 5px;
+    font-size: 28px;
 }
 input::placeholder {
-    color: #FFF;
+    color: #413014;
 }
 input:focus , input:active{
     box-shadow: 0 0 0 0;
@@ -45,11 +65,13 @@ input:focus , input:active{
 }
 
 .telaInicial div button{
-    height: 40px; 
-    border: 1px solid #6312d488;
-    color: #FFF;
-    background-color: #6312d48b;
+    height: 60px; 
+    border: 5px solid #413014;
+    color: #413014;
+    font-weight: 700;
+    background-color: #b68918e5;
     border-radius: 5px;
+    font-size: 22px;
 }
 
 button:hover{
@@ -59,6 +81,12 @@ button:hover{
 .telaDeSelecao h1 {
     margin-top: 10%;
     margin-left: 10%;
+    font-family: 'Stardew-Valley-font';
+    font-size: 70px;
+    color: #413014;
+    background-color: #f0c864;
+    border: 5px solid #413014;
+    border-radius: 10px;
 }
 
 .telaDeSelecao div {
@@ -72,8 +100,8 @@ justify-content: space-around;
 .objetoPedra {
     height: 170px;
     padding: 8px;
-    background-color: #6312d443;
-    border: 1px solid #6312d488;
+    background-color: #b68918e5;
+    border: 3px solid #413014;
     border-radius: 5px;
 }
 .objetoPedra:hover{
@@ -86,9 +114,14 @@ justify-content: space-around;
 .objetos {
     height: 170px;
     padding: 30px;
-    background-color: #6312d443;
-    border: 1px solid #6312d488;
+    background-color: #b68918e5;
+    border: 3px solid #413014;
     border-radius: 5px;
+}
+
+.objetosLoad {
+    height: 170px;
+    padding: 30px;
 }
 
 .telaDeLoad img{
@@ -103,6 +136,8 @@ justify-content: space-around;
     top: 20%;
     left: 47%;
     transform: translate(-50%, -50%);
+    font-family: 'Stardew-Valley-font';
+    color: #413014;
 }
 
 .telaDeResultado {
@@ -116,22 +151,25 @@ justify-content: space-around;
     text-align: center;
     margin-left: 150px;
     margin-bottom: 10px;
+    
+    font-family: 'Stardew-Valley-font';
 }
 
 .telaDeResultado p {
     font-size: 40px;
-    margin-left: 250px;
+    margin-left: 230px;
     margin-bottom: 40px;
+    font-family: 'Stardew-Valley-font';
 }
 
 .telaDeResultado button {
     font-size: 22px;
-    margin-left: 200px;
+    margin-left: 190px;
     margin-bottom: 40px;
-    height: 40px; 
-    border: 1px solid #6312d488;
-    color: #FFF;
-    background-color: #6312d48b;
+    height: 40px;
+    color: #413014;
+    background-color: #b68918e5;
+    border: 3px solid #413014;
     border-radius: 5px;
 }
 
